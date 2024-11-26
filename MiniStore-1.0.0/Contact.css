@@ -1,0 +1,120 @@
+/* Apply a general background with a photo */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .background {
+    background-image: url(/MiniStore-1.0.0/images/ContactUs-transformed.jpeg);
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    padding: 20px;
+    max-height: 41vh;
+  }
+  
+  /* Style the contact form container with a gradient background */
+  .contact-form-container {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple to blue gradient */
+    border-radius: 10px;
+    padding: 25px 35px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    margin-top: 1000px;
+    text-align: center;
+    color: #fff; /* Ensure text is readable on the gradient background */
+  }
+  
+  .contact-form-container h2 {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form-container p {
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .contact-form .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #f9f9f9; /* Light text for labels */
+  }
+  
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    color: #333;
+  }
+  
+  .contact-form .form-group input:focus,
+  .contact-form .form-group textarea:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+  }
+  
+  .contact-form .form-group textarea {
+    resize: none;
+  }
+  
+  /* Style the button */
+  .submit-btn {
+    background: linear-gradient(45deg, #4caf50, #2e7d32); /* Green gradient for button */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(45deg, #2e7d32, #1b5e20);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .background {
+      padding: 10px;
+    }
+  
+    .contact-form-container {
+      padding: 20px 25px;
+    }
+  
+    .contact-form-container h2 {
+      font-size: 18px;
+    }
+  
+    .contact-form-container p {
+      font-size: 12px;
+    }
+  
+    .submit-btn {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  
